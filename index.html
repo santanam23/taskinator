@@ -30,11 +30,26 @@
 
     </header>
     
-    <main class="page-content">
+    <main class="page-content" id="page-content">
         <section class="task-list-wrapper">
             <h2 class="list-title">Tasks To Do</h2>
             <ul class="task-list" id="tasks-to-do">
-                <li class="task-item">A task is going to be added soon!</li>
+                <li class="task-item" data-task-id="0">
+                    <div class="task-info">
+                        <h3 class="task-title">Sample Task</h3>
+                        <span class="task-type">Mobile</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn edit-btn" data-task-id="0">Edit</button>
+                        <button class="btn delete-btn" data-task-id="0">Delete</button>
+                        <select name="status-change" data-task-id="5" class="section-status">
+                            <option value="To Do">To Do</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+
+                </li>
             </ul>
         </section>  
         <!-- Tasks In Progress -->
